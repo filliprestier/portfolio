@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "roboto";
+    src: url("Roboto-Medium.ttf") format("truetype");
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('bk\ serviços.jpg');
+}
+
+header {
+    background-color: #302f2f;
+    display: flex;
+    
+}
+
+header > a {
+    color: white;
+    font-family: 'roboto';
+    text-decoration: none;
+    padding-top: 15px;
+    margin-left: 600px;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    margin-left: 600px;
+}
+
+nav > a {
+    color: white;
+    font-family: 'roboto';
+    text-decoration: none;
+    padding-top: 15px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+nav > a:hover {
+    color: #7963c9;
+    transition-duration: 0.5s;
+}
+
+#github {
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+header > h1 {
+    font-family: 'roboto';
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: none;
+        background-color: #1b1b1b;
+    }
+
+    nav {
+        margin-top: 40px;
+        margin-left: -150px;
+    }
+
+    nav > a {
+        margin-left: 40px;
+    }
+
+    nav > a.serviços {
+        display: none;
+    }
+}
